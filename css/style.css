@@ -1,0 +1,345 @@
+/* Paleta de colores inspirada en la maqueta y adaptada */
+:root {
+    --primary-color: #00A79D; /* Un verde azulado (teal) profesional y calmado */
+    --secondary-color: #F7A8B8; /* Un rosa suave como color de acento */
+    --dark-color: #343a40;
+    --light-color: #f8f9fa;
+}
+
+/* Aplicar el color primario a los elementos de Bootstrap */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #00857b;
+    border-color: #00736a;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+/* Estilos de la barra de navegación */
+.navbar-brand span {
+    color: var(--dark-color);
+}
+.navbar .nav-link {
+    font-weight: 500;
+}
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+    color: var(--primary-color);
+}
+
+/* Estilos del Banner Principal (Hero Section) */
+.hero-section {
+    position: relative;
+    height: 60vh; /* Altura del banner */
+    background-image: url('https://images.pexels.com/photos/796525/pexels-photo-796525.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Efecto parallax sutil */
+}
+
+/* Capa oscura sobre la imagen para que el texto resalte */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Asegurar que el contenido del hero esté por encima de la capa */
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Estilos de las secciones */
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: var(--dark-color);
+}
+
+footer .text-primary {
+    color: var(--primary-color) !important;
+}
+
+/* =============================================== */
+/* ESTILOS PARA LA PÁGINA "QUIÉNES SOMOS" */
+/* =============================================== */
+
+/* Estilo para la imagen de perfil redonda */
+.profile-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover; /* Evita que la imagen se deforme */
+    border: 5px solid white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Estilo para los iconos en las cajas de pilares */
+.feature-box {
+    border: 1px solid #eee;
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+/* Estilo para las tarjetas del equipo */
+.team-card {
+    transition: all 0.3s ease-in-out;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+/* =============================================== */
+/* ESTILOS PARA LA PÁGINA "CONTACTO" */
+/* =============================================== */
+
+.contact-header {
+    position: relative;
+    padding: 100px 0;
+    /* Imagen de fondo gratuita de Pexels */
+    background-image: url('https://images.pexels.com/photos/3958421/pexels-photo-3958421.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Capa de degradado sobre la imagen */
+.contact-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Degradado con el color primario del proyecto */
+    background: linear-gradient(45deg, rgba(0, 167, 157, 0.85), rgba(0, 80, 75, 0.9));
+    z-index: 1;
+}
+
+/* Asegurar que el contenido del header esté por encima de la capa */
+.contact-header .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* =============================================== */
+/* ESTILOS PARA LA PÁGINA "ESPECIALISTAS" */
+/* =============================================== */
+
+.specialist-header {
+    position: relative;
+    padding: 100px 0;
+    /* Imagen de fondo gratuita de Pexels */
+    background-image: url('https://images.pexels.com/photos/7648356/pexels-photo-7648356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Capa de degradado sobre la imagen */
+.specialist-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Degradado con el color primario del proyecto */
+    background: linear-gradient(45deg, rgba(0, 167, 157, 0.8), rgba(0, 80, 75, 0.85));
+    z-index: 1;
+}
+
+/* Asegurar que el contenido del header esté por encima de la capa */
+.specialist-header .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Estilos para las tarjetas de especialista */
+.specialist-card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.specialist-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.1) !important;
+}
+
+.specialist-card .card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Estilo para las etiquetas/badges dentro de la tarjeta */
+.bg-primary-soft {
+    background-color: rgba(0, 167, 157, 0.1);
+    color: #00736a;
+    font-weight: 500;
+}
+
+/* =============================================== */
+/* ESTILOS PARA LA PÁGINA "PERFIL DE ESPECIALISTA" */
+/* =============================================== */
+
+/* Breadcrumb / Migas de pan */
+.breadcrumb-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar fija en pantallas grandes */
+@media (min-width: 992px) {
+    #specialist-profile .sidebar-sticky {
+        position: sticky;
+        top: 100px; /* Ajusta este valor según la altura de tu navbar */
+    }
+}
+
+/* Foto de perfil */
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 5px solid #fff;
+}
+
+/* Acordeón de credenciales */
+.list-credentials .accordion-button {
+    font-weight: 600;
+    color: #333;
+}
+.list-credentials .accordion-button:not(.collapsed) {
+    background-color: rgba(0, 167, 157, 0.1);
+    color: var(--primary-color);
+    box-shadow: none;
+}
+.list-credentials .accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
+/* Tarjeta de testimonio */
+.testimonial-card {
+    padding-left: 1.5rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+
+/* =============================================== */
+/* ESTILOS PARA LA PÁGINA "BLOG" */
+/* =============================================== */
+
+.blog-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
+}
+
+.blog-card .card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.featured-post .card-img-top {
+    height: 350px;
+}
+
+/* Estilo para los links en la sidebar */
+aside .card-body a {
+    color: var(--primary-color);
+}
+aside .card-body a:hover {
+    text-decoration: underline !important;
+}
+
+/* Estilo para la paginación activa */
+.pagination .page-item.active .page-link {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.pagination .page-link {
+    color: var(--primary-color);
+}
+.pagination .page-link:hover {
+    color: #00857b;
+}
+
+
+/* =============================================== */
+/* ESTILOS PARA LA PÁGINA "NOTICIA INDIVIDUAL" */
+/* =============================================== */
+
+.article-body p {
+    line-height: 1.8;
+}
+
+.article-body h2, .article-body h3 {
+    color: var(--primary-color);
+}
+
+.article-body blockquote {
+    border-left: 4px solid #e9ecef;
+    padding-left: 1.5rem;
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+.social-share-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    color: #555;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-share-icon:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.author-box {
+    border: none !important;
+}
+
+.author-box img {
+    object-fit: cover;
+}
