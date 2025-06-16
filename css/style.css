@@ -1,6 +1,6 @@
 /* Paleta de colores inspirada en la maqueta y adaptada */
 :root {
-    --primary-color: #00A79D; /* Un verde azulado (teal) profesional y calmado */
+    --primary-color: #f48fd1; /* Un verde azulado (teal) profesional y calmado */
     --secondary-color: #F7A8B8; /* Un rosa suave como color de acento */
     --dark-color: #343a40;
     --light-color: #f8f9fa;
@@ -13,7 +13,7 @@
 }
 
 .btn-primary:hover {
-    background-color: #00857b;
+    background-color: #ec21a6;
     border-color: #00736a;
 }
 
@@ -41,7 +41,7 @@
 .hero-section {
     position: relative;
     height: 60vh; /* Altura del banner */
-    background-image: url('https://images.pexels.com/photos/796525/pexels-photo-796525.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-image: url('../img/banner.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Efecto parallax sutil */
@@ -140,7 +140,7 @@ footer .text-primary {
     right: 0;
     bottom: 0;
     /* Degradado con el color primario del proyecto */
-    background: linear-gradient(45deg, rgba(0, 167, 157, 0.85), rgba(0, 80, 75, 0.9));
+    background: linear-gradient(45deg, rgba(244, 143, 209, 0.85), rgba(227, 34, 160, 0.9));
     z-index: 1;
 }
 
@@ -172,7 +172,7 @@ footer .text-primary {
     right: 0;
     bottom: 0;
     /* Degradado con el color primario del proyecto */
-    background: linear-gradient(45deg, rgba(0, 167, 157, 0.8), rgba(0, 80, 75, 0.85));
+    background: linear-gradient(45deg, rgba(244, 143, 209, 0.85), rgba(227, 34, 160, 0.9));
     z-index: 1;
 }
 
@@ -200,8 +200,8 @@ footer .text-primary {
 
 /* Estilo para las etiquetas/badges dentro de la tarjeta */
 .bg-primary-soft {
-    background-color: rgba(0, 167, 157, 0.1);
-    color: #00736a;
+    background-color: rgba(244, 143, 209, 0.5);
+    color: #000;
     font-weight: 500;
 }
 
@@ -295,7 +295,7 @@ aside .card-body a:hover {
     color: var(--primary-color);
 }
 .pagination .page-link:hover {
-    color: #00857b;
+    color: #f48fd1;
 }
 
 
