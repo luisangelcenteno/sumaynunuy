@@ -343,3 +343,9 @@ aside .card-body a:hover {
 .author-box img {
     object-fit: cover;
 }
+
+.link-post:hover {
+    color: #ec21a6 !important;
+    font-weight: bold;
+    text-decoration: none;
+}
