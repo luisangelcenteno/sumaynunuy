@@ -1,0 +1,64 @@
+.maternity-card {
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.maternity-card .overlay-content {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.price-box {
+    background-color: white;
+    border-radius: 1.25rem;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    display: inline-block;
+    align-self: flex-start;
+}
+
+.price-box .plan-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.price-box .price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--custom-purple);
+    line-height: 1;
+}
+
+.details-column .main-title {
+    color: var(--custom-purple);
+    font-weight: 700;
+}
+
+.details-column .section-title {
+    color: var(--custom-purple);
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.details-column .service-list {
+    list-style-type: none;
+    padding-left: 1.2rem;
+}
+
+.details-column .service-list li {
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.details-column .service-list li::before {
+    content: '•';
+    position: absolute;
+    left: -1.2rem;
+    color: var(--custom-purple);
+    font-weight: bold;
+}
